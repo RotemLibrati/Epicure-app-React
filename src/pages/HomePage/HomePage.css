@@ -1,0 +1,259 @@
+.hero-picture {
+    position: absolute;
+    /* width: 1440px; */
+    width: 100%;
+    height: 696px;
+    left: 0px;
+    top: 64px;
+}
+.frame-146 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 80px;
+
+    position: absolute;
+    width: 100%;
+    height: 3407px;
+    left: 0px;
+    top: 840px;
+}
+.popular-rest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+
+    width: 1440px;
+    height: 555px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.title-pop-rest {
+    width: 1440px;
+    height: 35px;
+
+    /* font-family: 'Helvetica Neue'; */
+    font-style: normal;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 35px;
+    /* identical to box height, or 117% */
+
+    text-align: center;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.spinner {
+    display: flex;
+    justify-content: center;
+    margin-left: 520px;
+    margin-top: 100px;
+}
+.pop-rest-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 40px;
+    
+    width: 1185px;
+    height: 480px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.pop-rest{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    
+    width: 1185px;
+    height: 405px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.all-rest {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+    margin-top: 25px;
+    
+    width: 226px;
+    height: 35px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.all-rest-btn {
+    width: 190px;
+    height: 35px;
+    
+    /* font-family: 'Helvetica Neue'; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    /* identical to box height, or 146% */
+    
+    text-align: right;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.arrow {
+    width: 24px;
+    height: 24px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.arrow-logo {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 12.5%;
+    bottom: 12.5%;
+    
+    background: #000000;
+}
+.dishes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+    
+    width: 1188px;
+    height: 729px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.dishes-title {
+    width: 665px;
+    height: 35px;
+    
+    /* font-family: 'Helvetica Neue'; */
+    font-style: normal;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 35px;
+    /* identical to box height, or 117% */
+    
+    text-align: center;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.form-dishes {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    
+    width: 1188px;
+    height: 654px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.dish {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    
+    width: 380px;
+    height: 654px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 39px 476px;
+    gap: 32px;
+    
+    width: 1440px;
+    height: 265px;
+    
+    background: #FAFAFA;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}

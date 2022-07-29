@@ -1,0 +1,129 @@
+.restaurant-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    
+    width: 379px;
+    height: 405px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.rest-image {
+    width: 379px;
+    height: 236px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+.rest-info-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0px;
+    gap: 8px;
+    
+    width: 379px;
+    height: 169px;
+    
+    background: #F9F4EA;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 10;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    
+    width: 146px;
+    height: 85px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.name-restaurant {
+    width: 135px;
+    height: 47px;
+    
+    /* font-family: 'Helvetica Neue'; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    /* identical to box height, or 118% */
+    
+    letter-spacing: 2.67px;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.name-chef {
+    width: 160px;
+    /* height: 30px; */
+    
+    /* font-family: 'Helvetica Neue'; */
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height, or 125% */
+    
+    letter-spacing: 1.97px;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.rating-form {
+    width: 216px;
+    height: 40px;
+
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.rating {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 81.5px;
+    top: 111px;
+    
+    background: #DE9200;    
+}
