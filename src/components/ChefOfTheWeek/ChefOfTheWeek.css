@@ -1,0 +1,178 @@
+.chef-of-the-week {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    
+    width: 1183.5px;
+    height: 447px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.chef-title {
+    width: 1112px;
+    height: 35px;
+    
+    /* font-family: 'Helvetica Neue'; */
+    font-style: normal;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 35px;
+    /* identical to box height, or 117% */
+    
+    text-align: center;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.chef-frame {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    width: 1183.5px;
+    height: 372px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.chef-desc {
+    /* position: absolute; */
+    width: 642px;
+    height: 255px;
+    left: 541.5px;
+    top: 96px;
+    
+    /* font-family: 'Helvetica Neue'; */
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 35px;
+    /* or 146% */
+    
+    text-align: justify;
+    letter-spacing: 1.25px;
+    
+    color: #000000;
+}
+.chef-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    
+    /* position: relative; */
+    height: 78px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    
+    
+}
+.chef-name {
+    width: 380px;
+    height: 47px;
+    position: absolute;
+    /* font-family: 'Helvetica Neue'; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    /* identical to box height, or 118% */
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    letter-spacing: 2.67px;
+    color: #000000;
+    margin-top: 560px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+.chef-image {
+    /* position: absolute; */
+    margin-top: 250px;
+    width: 380px;
+    height: 357px;
+    /* left: calc(50% - 380px/2);
+    top: calc(50% - 357px/2 + 9.5px); */   
+}
+.chef-of-the-week-rest {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    
+    width: 725px;
+    height: 432px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.belong-rest {
+    width: 665px;
+    height: 35px;
+    
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 35px;
+    /* identical to box height, or 117% */
+    
+    letter-spacing: 1.25px;
+    text-transform: capitalize;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.chef-restaurants {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    
+    width: 725px;
+    height: 357px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
