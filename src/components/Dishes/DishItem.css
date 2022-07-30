@@ -27,11 +27,12 @@
 .dish-info-card {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 24px 0px 8px;
     gap: 8px;
     
-    width: 380px;
+    /* width: 380px; */
     height: 348px;
     
     background: #F9F4EA;
@@ -44,7 +45,7 @@
     flex-grow: 1;
 }
 .dish-name {
-    width: 140px;
+    /* width: 140px; */
     height: 94px;
     
     font-family: 'Helvetica Neue';
