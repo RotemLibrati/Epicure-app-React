@@ -52,7 +52,7 @@
     padding: 0px;
     gap: 8px;
     
-    width: 146px;
+    /* width: 146px; */
     height: 85px;
     
     
@@ -63,7 +63,7 @@
     flex-grow: 0;
 }
 .name-restaurant {
-    width: 135px;
+    /* width: 135px; */
     height: 47px;
     
     /* font-family: 'Helvetica Neue'; */
@@ -84,8 +84,8 @@
     order: 0;
     flex-grow: 0;
 }
-.name-chef {
-    width: 160px;
+.rest-name-chef {
+    /* width: 160px; */
     /* height: 30px; */
     
     /* font-family: 'Helvetica Neue'; */

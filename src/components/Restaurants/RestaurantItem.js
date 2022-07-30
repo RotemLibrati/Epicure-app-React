@@ -7,7 +7,7 @@ const RestaurantItem = ({ restaurant: { _id, name, image, chef, rating } }) => {
             <div className='rest-info-card'>
                 <div className='info'>
                     <div className='name-restaurant'>{name}</div>
-                    <div className='name-chef'>{chef.name}</div>
+                    <div className='rest-name-chef'>{chef.name}</div>
                 </div>
                 <div className='rating-form'>
                     {/* <img className='rating' src={require('../../assert/images/Star.png')} alt="star" /> */}
