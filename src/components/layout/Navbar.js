@@ -1,18 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './NavBar.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const Navbar = () => {
+    const history = useNavigate();
+    useEffect(() => {
+        history('/')
+    },[]);
     return (
         <nav className='navbar'>
             <div className='left-side'>
                 <div className='logo-main' />
                 <h1>
-                    <a className='a' href='/#'>Epicure</a>
+                    <a className='a' href='/'>Epicure</a>
                 </h1>
                 <h3 className='h3'>
-                    <Link className='link' to="/">Restaurant</Link>
+                    <Link  className='link' to="/restaurants">Restaurant</Link>
                 </h3>
                 <h3 className='h3'>
                     <Link className='link' to="/">Chef</Link>
