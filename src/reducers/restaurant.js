@@ -1,4 +1,4 @@
-import { GET_TOP_RESTAURANTS, RESTAURANT_ERROR, GET_RESTAURANTS_BY_CHEF, GET_ALL_RESTAURANTS } from "../actions/types";
+import { GET_TOP_RESTAURANTS, RESTAURANT_ERROR, GET_RESTAURANTS_BY_CHEF, GET_ALL_RESTAURANTS, GET_RESTAURANT_BY_ID } from "../actions/types";
 
 const initialState = {
     restaurants: [],
@@ -23,6 +23,12 @@ export default function (state=initialState, action) {
             return {
                 ...state,
                 restaurants: payload,
+                loading_r: false
+            }
+        case GET_RESTAURANT_BY_ID:
+            return {
+                ...state,
+                restaurant: payload,
                 loading_r: false
             }
         case GET_RESTAURANTS_BY_CHEF:

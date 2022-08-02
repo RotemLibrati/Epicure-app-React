@@ -1,5 +1,5 @@
 import axios from "axios";
-import { GET_TOP_RESTAURANTS, RESTAURANT_ERROR, GET_RESTAURANTS_BY_CHEF, GET_ALL_RESTAURANTS } from "./types";
+import { GET_TOP_RESTAURANTS, RESTAURANT_ERROR, GET_RESTAURANTS_BY_CHEF, GET_ALL_RESTAURANTS, GET_RESTAURANT_BY_ID } from "./types";
 
 //Get top restaurants
 export const getTopRestaurants = () => async dispatch => {
@@ -45,5 +45,19 @@ export const getAllRestaurants = () => async dispatch => {
             type: RESTAURANT_ERROR,
             payload: { msg: err.response.statusText, status: err.response.status }
         });
+    }
+};
+export const getRestaurantById = id => async dispatch => {
+    try{
+        const res = await axios.get(`/api/restaurants/${id}`);
+        dispatch({
+            type: GET_RESTAURANT_BY_ID,
+            payload: res.data
+        })
+    } catch(err){
+        dispatch({
+            type: RESTAURANT_ERROR,
+            payload: { msg: err.response.statusText, status: err.response.status }
+        })
     }
 }
