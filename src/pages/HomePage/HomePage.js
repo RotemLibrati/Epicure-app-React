@@ -46,7 +46,7 @@ const HomePage = ({ getTopRestaurants, getTopDishes, getAllRestaurants,
 
             </div>
             <div className='all-rest'>
-              <div className='all-rest-btn' onClick={() => { }}>All Restaurants </div>
+              <div className='all-rest-btn' onClick={() => { window.location.href = '/restaurants' }}>All Restaurants </div>
               <div className='arrow'>
                 {/* <img className='arrow-logo' src={require('../../assert/images/Arrow.png')} alt="arrow logo" /> */}
               </div>
@@ -61,7 +61,7 @@ const HomePage = ({ getTopRestaurants, getTopDishes, getAllRestaurants,
             </div>
             ) : (
               top_dishes.map(dish => (
-                <DishItem key={dish._id} dish={dish} />
+                  <DishItem key={dish._id} dish={dish} />
               ))
             )}
           </div>
@@ -74,8 +74,20 @@ const HomePage = ({ getTopRestaurants, getTopDishes, getAllRestaurants,
             <Spinner />
           </div>
           ) : (
-            <ChefOfTheWeek key={chefs[0]._id} chef={chefs[0]} restaurants={restaurants}/>
+            <ChefOfTheWeek key={chefs[0]._id} chef={chefs[0]} restaurants={restaurants} />
           )}
+        </div>
+        <div className='frame-1'>
+          <div className='about'>
+            <img className='about-img' src={require('../../assert/images/about-logo@3x 2.png')} alt="about-img" />
+            <div className='about-content'>
+              <div className='about-content-title'>About us:</div>
+              <div className='about-content-body'>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a lacus vel justo fermentum bibendum non eu ipsum. Cras porta malesuada eros, eget blandit turpis suscipit at. Vestibulum sed massa in magna sodales porta. Vivamus elit urna, dignissim a vestibulum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a lacus vel justo fermentum bibendum no eu ipsum. Cras porta malesuada eros.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 

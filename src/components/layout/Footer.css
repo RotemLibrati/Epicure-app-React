@@ -1,0 +1,121 @@
+.footer {
+    width: 1440px;
+    height: 85px;
+    position: absolute;
+    bottom: 0;
+    /* margin-top: 350px; */
+    
+    /* Inside auto layout */
+    
+    /* flex: none; */
+    /* order: 1; */
+    /* flex-grow: 0; */
+}
+.footer-line {
+    /* position: absolute; */
+    width: 1440px;
+    height: 0px;
+    left: 0px;
+    top: 1px;
+    
+    border: 0.2px solid #979797;
+}
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 31px 397px;
+    gap: 10px;
+    
+    /* position: absolute; */
+    width: 1440px;
+    height: 84px;
+    left: 0px;
+    top: 1px;
+    
+    background: #FFFFFF;
+}
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    
+    width: 419px;
+    height: 22px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.footer-contact-us {
+    width: 103px;
+    height: 22px;
+    
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    letter-spacing: 1.92px;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.footer-term-of-use {
+    width: 110px;
+    height: 22px;
+    
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    letter-spacing: 1.92px;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.footer-privacy-policy {
+    width: 126px;
+    height: 22px;
+    
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    letter-spacing: 1.92px;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}

@@ -1,19 +1,4 @@
-.dish-card {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    
-    width: 380px;
-    height: 654px;
-    
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
+
 .image-dishes {
     width: 380px;
     height: 306px;
@@ -172,5 +157,21 @@
     
     flex: none;
     order: 1;
+    flex-grow: 0;
+}
+.dish-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    margin-top: 30px;
+    width: 380px;
+    height: 654px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
     flex-grow: 0;
 }

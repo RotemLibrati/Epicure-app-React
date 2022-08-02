@@ -1,8 +1,9 @@
 import React from 'react';
 import './RestaurantItem.css';
+import { Link } from 'react-router-dom';
 const RestaurantItem = ({ restaurant: { _id, name, image, chef, rating } }) => {
     return (
-        <div className='restaurant-form'>
+        <Link className='restaurant-form' to={`/restaurants/${_id}`}>
             <img className='rest-image' src={image} alt={image} />
             <div className='rest-info-card'>
                 <div className='info'>
@@ -10,10 +11,54 @@ const RestaurantItem = ({ restaurant: { _id, name, image, chef, rating } }) => {
                     <div className='rest-name-chef'>{chef.name}</div>
                 </div>
                 <div className='rating-form'>
-                    {/* <img className='rating' src={require('../../assert/images/Star.png')} alt="star" /> */}
+                    {rating === 1 && (
+                        <React.Fragment>
+                            <img className='rating' src={require('../../assert/images/Star.png')} alt="star" />
+                            <img className='rating' src={require('../../assert/images/Star2.png')} alt="star" />
+                            <img className='rating' src={require('../../assert/images/Star2.png')} alt="star" />
+                            <img className='rating' src={require('../../assert/images/Star2.png')} alt="star" />
+                            <img className='rating' src={require('../../assert/images/Star2.png')} alt="star" />
+                        </React.Fragment>
+                    )}
+                    {rating === 2 && (
+                        <React.Fragment>
+                            <img className='rating' src={require('../../assert/images/Star.png')} alt="star" />
+                            <img className='rating' src={require('../../assert/images/Star.png')} alt="star" />
+                            <img className='rating' src={require('../../assert/images/Star2.png')} alt="star" />
+                            <img className='rating' src={require('../../assert/images/Star2.png')} alt="star" />
+                            <img className='rating' src={require('../../assert/images/Star2.png')} alt="star" />
+                        </React.Fragment>
+                    )}
+                    {rating === 3 && (
+                        <React.Fragment>
+                            <img className='rating' src={require('../../assert/images/Star.png')} alt="star" />
+                            <img className='rating' src={require('../../assert/images/Star.png')} alt="star" />
+                            <img className='rating' src={require('../../assert/images/Star.png')} alt="star" />
+                            <img className='rating' src={require('../../assert/images/Star2.png')} alt="star" />
+                            <img className='rating' src={require('../../assert/images/Star2.png')} alt="star" />
+                        </React.Fragment>
+                    )}
+                    {rating === 4 && (
+                        <React.Fragment>
+                            <img className='rating' src={require('../../assert/images/Star.png')} alt="star" />
+                            <img className='rating' src={require('../../assert/images/Star.png')} alt="star" />
+                            <img className='rating' src={require('../../assert/images/Star.png')} alt="star" />
+                            <img className='rating' src={require('../../assert/images/Star.png')} alt="star" />
+                            <img className='rating' src={require('../../assert/images/Star2.png')} alt="star" />
+                        </React.Fragment>
+                    )}
+                    {rating === 5 && (
+                        <React.Fragment>
+                            <img className='rating' src={require('../../assert/images/Star.png')} alt="star" />
+                            <img className='rating' src={require('../../assert/images/Star.png')} alt="star" />
+                            <img className='rating' src={require('../../assert/images/Star.png')} alt="star" />
+                            <img className='rating' src={require('../../assert/images/Star.png')} alt="star" />
+                            <img className='rating' src={require('../../assert/images/Star.png')} alt="star" />
+                        </React.Fragment>
+                    )}
                 </div>
             </div>
-        </div>
+        </Link>
     )
 };
 
