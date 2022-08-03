@@ -153,6 +153,7 @@
     gap: 32px;
     position: absolute;
     flex-wrap: wrap;
+    margin-top: 50px;
     /* flex: none; */
     top: 750px;
 }

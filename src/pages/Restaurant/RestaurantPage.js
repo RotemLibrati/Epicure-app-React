@@ -10,7 +10,8 @@ import { getAllDishes } from '../../actions/dish';
 
 //Component
 import Spinner from '../../components/layout/Spinner';
-import DishItem from '../../components/Dishes/DishItem';
+// import DishItem from '../../components/Dishes/DishItem';
+import DishItemSmall from '../../components/Dishes/DishItemSmall';
 
 const RestaurantPage = ({ getRestaurantById, getAllDishes, restaurant, dish }) => {
     const { id } = useParams();
@@ -45,7 +46,7 @@ const RestaurantPage = ({ getRestaurantById, getAllDishes, restaurant, dish }) =
                     </div>
                     <div className='display-dishes'>
                         {dish.dishes.filter(dish => dish.restaurant === id).map(dish => (
-                            <DishItem key={dish._id} dish={dish} />
+                            <DishItemSmall key={dish._id} dish={dish} />
                         ))}
                     </div>
                 </div>
