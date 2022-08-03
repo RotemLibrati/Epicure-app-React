@@ -1,0 +1,171 @@
+.dish-card-small {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    margin-bottom: 35px;
+    width: 272px;
+    height: 413px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.dish-small-img {
+    width: 272px;
+    height: 172.73px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.dish-card-small-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0px 8px;
+    gap: 8px;
+    
+    width: 272px;
+    height: 240.27px;
+    
+    background: #F9F4EA;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 6;
+    align-self: stretch;
+    flex-grow: 1;
+}
+.dish-small-name {
+    width: 149px;
+    height: 26px;
+    
+    /* font-family: 'Helvetica Neue'; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    /* identical to box height, or 108% */
+    
+    text-align: center;
+    letter-spacing: 2.67px;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.dish-small-desc {
+    width: 222px;
+    height: 136.27px;
+    
+    /* font-family: 'Helvetica Neue'; */
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 24px;
+    /* or 120% */
+    
+    text-align: center;
+    letter-spacing: 1.97px;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+}
+.dish-small-price-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+    
+    width: 224px;
+    height: 30px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
+.line-left{
+    width: 82.5px;
+    height: 0px;
+    
+    border: 0.5px solid #979797;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+.dish-small-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 2px;
+    
+    width: 35px;
+    height: 30px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.dish-small-price-text {
+    width: 25px;
+    height: 30px;
+    
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+    
+    text-align: center;
+    letter-spacing: 1.97px;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.line-right {
+    width: 82.5px;
+    height: 0px;
+    
+    border: 0.5px solid #979797;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 2;
+    flex-grow: 1;
+}
