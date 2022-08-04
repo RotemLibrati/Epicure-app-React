@@ -1,0 +1,21 @@
+.dish-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 1000px;
+    height: 1224px;
+    background: #FFFFFF;
+}
+.display-dish-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 1000px;
+    height: 1224px;
+    
+    
+    background: rgba(0, 0, 0, 0.7);
+    
+}
