@@ -1,0 +1,125 @@
+.chefs-container {
+    /* position: relative; */
+    /* width: 1440px; */
+    /* height: 1432px; */
+    
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+.frame-148 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 1156px;
+
+}
+.tabs-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    
+    height: 22px;
+    background: #FFFFFF;
+    
+    /* Inside auto layout */
+
+}
+.tabs-btns-frame1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    
+    
+    /* width: 248px; */
+    height: 22px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.btn-all {
+    /* width: 24px; */
+    height: 21px;
+    background-color: white;
+    border: 0;
+    cursor: pointer;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 1.92px;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.btn-new {
+    /* width: 39px; */
+    height: 22px;
+    background-color: white;
+    border: 0;
+    cursor: pointer;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    letter-spacing: 1.92px;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.btn-most-viewd {
+    /* width: 105px; */
+    height: 22px;
+    background-color: white;
+    border: 0;
+    cursor: pointer;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    letter-spacing: 1.92px;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+.display-chefs {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 338px;
+}
