@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './RestaurantPage.css';
 import { useParams } from 'react-router-dom';
 import { connect } from 'react-redux';
@@ -15,6 +15,16 @@ import DishItemSmall from '../../components/Dishes/DishItemSmall';
 
 const RestaurantPage = ({ getRestaurantById, getAllDishes, restaurant, dish }) => {
     const { id } = useParams();
+    const [params, setParams] = useState({
+        breakfast: true,
+        lanch: false,
+        dinner: false
+    });
+    const onClickParams = e => setParams({
+        breakfast: e.target.name === 'breakfast' ? true : false,
+        lanch: e.target.name === 'lanch' ? true : false,
+        dinner: e.target.name === 'dinner' ? true : false,
+    });
     useEffect(() => {
         getRestaurantById(id);
         getAllDishes();
@@ -37,17 +47,25 @@ const RestaurantPage = ({ getRestaurantById, getAllDishes, restaurant, dish }) =
                     </div>
                     <div className='category'>
                         <div className='category-content'>
-                            <div className='breakfast-category'>Breakfast</div>
-                            <div className='lanch-category'>Lanch</div>
-                            <div className='dinner-category'>Dinner</div>
+                            <button name='breakfast' className='breakfast-category' onClick={e => onClickParams(e)}>Breakfast</button>
+                            <button name='lanch' className='lanch-category' onClick={e => onClickParams(e)}>Lanch</button>
+                            <button name='dinner' className='dinner-category' onClick={e => onClickParams(e)}>Dinner</button>
                         </div>
-                        <div className='line'></div>
-                        {/* <div className='line' style={{ 'marginLeft': '250px' }}></div> */}
+                        {params.breakfast === true ? (<div className='line' style={{ 'marginLeft': '10px' }}></div>) : params.lanch === true ? (
+                            <div className='line' style={{ 'marginLeft': '150px' }}></div>
+                        ) : (
+                            <div className='line' style={{ 'marginLeft': '270px' }}></div>
+                        )}
                     </div>
                     <div className='display-dishes'>
-                        {dish.dishes.filter(dish => dish.restaurant === id).map(dish => (
+                        {params.breakfast === true ? dish.dishes.filter(dish => dish.restaurant === id && dish.type.includes("breakfast")).map(dish => (
                             <DishItemSmall key={dish._id} dish={dish} />
-                        ))}
+                            // console.log(dish)
+                        )) : params.lanch === true ? dish.dishes.filter(dish => dish.restaurant === id && dish.type.includes("lanch")).map(dish => (
+                            <DishItemSmall key={dish._id} dish={dish} />)) : (
+                            dish.dishes.filter(dish => dish.restaurant === id && dish.type.includes("dinner")).map(dish => (
+                                <DishItemSmall key={dish._id} dish={dish} />
+                            )))}
                     </div>
                 </div>
             )}

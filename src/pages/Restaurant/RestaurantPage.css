@@ -101,6 +101,9 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+    background: #FFFFFF;
+    border: 0;
+    cursor: pointer;
 }
 .lanch-category {
     height: 29px;
@@ -113,11 +116,14 @@
     flex: none;
     order: 1;
     flex-grow: 0;
+    background: #FFFFFF;
+    border: 0;
+    cursor: pointer;
 }
 .dinner-category {
     /* width: 74px; */
     height: 29px;
-    
+    cursor: pointer;
     /* font-family: 'Helvetica Neue'; */
     font-style: normal;
     font-weight: 200;
@@ -128,6 +134,8 @@
     letter-spacing: 1.92px;
     
     color: #000000;
+    background: #FFFFFF;
+    border: 0;
     
     
     /* Inside auto layout */
