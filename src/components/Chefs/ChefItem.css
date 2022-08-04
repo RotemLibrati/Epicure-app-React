@@ -1,0 +1,31 @@
+.chef-item-card {
+    display: flex;
+    flex-direction: column;
+    width: 378px;
+    height: 338px;
+    margin: 25px;
+}
+.chef-item-frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 78px;
+    width: 378px;
+    margin-top: 260px;
+    flex-wrap: wrap;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+
+}
+.chef-item-name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 2.67px;
+    color: #000000;
+}
+.chef-item-image {
+
+}
