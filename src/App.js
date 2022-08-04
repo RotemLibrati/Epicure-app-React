@@ -12,6 +12,8 @@ import Navbar from './components/layout/Navbar';
 import HomePage from './pages/HomePage/HomePage';
 import RestaurantPage from './pages/Restaurant/RestaurantPage';
 import Restaurants from './pages/Restaurant/Restaurants';
+import DishPage from './pages/DishPage/DishPage';
+import ChefsPage from './pages/ChefPage/ChefsPage';
 
 const App = () => {
   return (
@@ -25,6 +27,8 @@ const App = () => {
               <Route exact path='/' element={<HomePage />} />
               <Route exact path='/restaurants' element={<Restaurants />} />
               <Route exact path='/restaurants/:id' element={<RestaurantPage />} />
+              <Route exact path='/restaurants/dish/:id' element={<DishPage />} />
+              <Route exact path='/chefs' element={<ChefsPage />} />
             </Routes>
             {/* <Footer /> */}
           </React.Fragment>
