@@ -15,26 +15,31 @@ import Restaurants from './pages/Restaurant/Restaurants';
 import DishPage from './pages/DishPage/DishPage';
 import ChefsPage from './pages/ChefPage/ChefsPage';
 
+//Context
+import SetToggleOrderProvider from './context/SetToggleCart';
+
 const App = () => {
   return (
     <Provider store={store}>
-      <div className="App">
-        <Router>
-          <React.Fragment>
-            <Navbar />
+      <SetToggleOrderProvider>
+        <div className="App">
+          <Router>
+            <React.Fragment>
+              <Navbar />
 
-            <Routes>
-              <Route exact path='/' element={<HomePage />} />
-              <Route exact path='/restaurants' element={<Restaurants />} />
-              <Route exact path='/restaurants/:id' element={<RestaurantPage />} />
-              <Route exact path='/restaurants/dish/:id' element={<DishPage />} />
-              <Route exact path='/chefs' element={<ChefsPage />} />
-            </Routes>
-            {/* <Footer /> */}
-          </React.Fragment>
-        </Router>
+              <Routes>
+                <Route exact path='/' element={<HomePage />} />
+                <Route exact path='/restaurants' element={<Restaurants />} />
+                <Route exact path='/restaurants/:id' element={<RestaurantPage />} />
+                <Route exact path='/restaurants/dish/:id' element={<DishPage />} />
+                <Route exact path='/chefs' element={<ChefsPage />} />
+              </Routes>
+              {/* <Footer /> */}
+            </React.Fragment>
+          </Router>
 
-      </div>
+        </div>
+      </SetToggleOrderProvider>
     </Provider>
   );
 }
