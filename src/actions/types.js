@@ -10,4 +10,6 @@ export const GET_RESTAURANT_BY_ID = 'GET_RESTAURANT_BY_ID';
 export const GET_ALL_DISHES = 'GET_ALL_DISHES';
 export const GET_DISH_BY_ID = 'GET_DISH_BY_ID';
 export const DELETE_DISH_BY_ID = 'DELETE_DISH_BY_ID';
+export const SET_NEW_ORDER = 'SET_NEW_ORDER';
+export const ORDER_ERROR = 'ORDER_ERROR';
 
