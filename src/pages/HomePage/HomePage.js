@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import './HomePage.css';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
@@ -8,6 +8,8 @@ import { getTopRestaurants, getAllRestaurants } from '../../actions/restaurant';
 import { getTopDishes } from '../../actions/dish';
 import { getAllChefs } from '../../actions/chef';
 
+//Context
+import { SetOrder } from '../../context/SetToggleCart';
 
 //Component
 import Box from '../../components/Box/Box';
@@ -16,10 +18,12 @@ import DishItem from '../../components/Dishes/DishItem';
 import Spinner from '../../components/layout/Spinner';
 import Icons from '../../components/Icons/Icons';
 import ChefOfTheWeek from '../../components/ChefOfTheWeek/ChefOfTheWeek';
+import Orders from '../../components/Orders/Orders';
 
 
 const HomePage = ({ getTopRestaurants, getTopDishes, getAllRestaurants,
   getAllChefs, restaurant: { restaurants, top_restaurants, loading_r }, dish: { top_dishes, loading_d }, chef: { chefs, loading_c } }) => {
+    const { toggleOrder } = useContext(SetOrder);
   useEffect(() => {
     getTopRestaurants();
     getTopDishes();
@@ -28,6 +32,7 @@ const HomePage = ({ getTopRestaurants, getTopDishes, getAllRestaurants,
   }, [getTopRestaurants, getTopDishes, getAllChefs, getAllRestaurants]);
   return (
     <div>
+      {toggleOrder && <Orders />}
       <img className='hero-picture' src={require('../../assert/images/hero-picture 1.png')} alt='logo-search' />
       <Box />
       <div className='frame-146'>

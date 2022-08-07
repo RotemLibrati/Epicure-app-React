@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import './RestaurantPage.css';
 import { useParams } from 'react-router-dom';
 import { connect } from 'react-redux';
@@ -8,12 +8,16 @@ import PropTypes from 'prop-types';
 import { getRestaurantById } from '../../actions/restaurant';
 import { getAllDishes } from '../../actions/dish';
 
+//Context
+import { SetOrder } from '../../context/SetToggleCart';
+
 //Component
 import Spinner from '../../components/layout/Spinner';
-// import DishItem from '../../components/Dishes/DishItem';
+import SetNewOrder from '../../components/Orders/SetNewOrder';
 import DishItemSmall from '../../components/Dishes/DishItemSmall';
 
 const RestaurantPage = ({ getRestaurantById, getAllDishes, restaurant, dish }) => {
+    const { createOrder, changeCreateOrder } = useContext(SetOrder);
     const { id } = useParams();
     const [params, setParams] = useState({
         breakfast: true,
@@ -35,39 +39,44 @@ const RestaurantPage = ({ getRestaurantById, getAllDishes, restaurant, dish }) =
                 <div className='spinner'>
                     <Spinner />
                 </div>) : (
-                <div className='container-page'>
-                    <img className='cover-photo' src={restaurant.restaurant.image} alt={restaurant.restaurant.image} />
-                    <div className='rest-name'>{restaurant.restaurant.name}</div>
-                    <div className='rest-chef-name'>{restaurant.restaurant.chef.name}</div>
-                    <div className='open-now'>
-                        <div>
-                            <img className='open-now-icon' src={require('../../assert/images/Open.png')} alt="open-now-icon" />
+                <React.Fragment>
+                    {createOrder && <div className='container-order'>
+                        <SetNewOrder />
+                    </div>}
+                    <div className='container-page'>
+                        <img className='cover-photo' src={restaurant.restaurant.image} alt={restaurant.restaurant.image} />
+                        <div className='rest-name'>{restaurant.restaurant.name}</div>
+                        <div className='rest-chef-name'>{restaurant.restaurant.chef.name}</div>
+                        <div className='open-now'>
+                            <div>
+                                <img className='open-now-icon' src={require('../../assert/images/Open.png')} alt="open-now-icon" />
+                            </div>
+                            <div className='open-now-text'>Open now</div>
                         </div>
-                        <div className='open-now-text'>Open now</div>
-                    </div>
-                    <div className='category'>
-                        <div className='category-content'>
-                            <button name='breakfast' className='breakfast-category' onClick={e => onClickParams(e)}>Breakfast</button>
-                            <button name='lanch' className='lanch-category' onClick={e => onClickParams(e)}>Lanch</button>
-                            <button name='dinner' className='dinner-category' onClick={e => onClickParams(e)}>Dinner</button>
+                        <div className='category'>
+                            <div className='category-content'>
+                                <button name='breakfast' className='breakfast-category' onClick={e => onClickParams(e)}>Breakfast</button>
+                                <button name='lanch' className='lanch-category' onClick={e => onClickParams(e)}>Lanch</button>
+                                <button name='dinner' className='dinner-category' onClick={e => onClickParams(e)}>Dinner</button>
+                            </div>
+                            {params.breakfast === true ? (<div className='line' style={{ 'marginLeft': '10px' }}></div>) : params.lanch === true ? (
+                                <div className='line' style={{ 'marginLeft': '150px' }}></div>
+                            ) : (
+                                <div className='line' style={{ 'marginLeft': '270px' }}></div>
+                            )}
                         </div>
-                        {params.breakfast === true ? (<div className='line' style={{ 'marginLeft': '10px' }}></div>) : params.lanch === true ? (
-                            <div className='line' style={{ 'marginLeft': '150px' }}></div>
-                        ) : (
-                            <div className='line' style={{ 'marginLeft': '270px' }}></div>
-                        )}
-                    </div>
-                    <div className='display-dishes'>
-                        {params.breakfast === true ? dish.dishes.filter(dish => dish.restaurant === id && dish.type.includes("breakfast")).map(dish => (
-                            <DishItemSmall key={dish._id} dish={dish} />
-                            // console.log(dish)
-                        )) : params.lanch === true ? dish.dishes.filter(dish => dish.restaurant === id && dish.type.includes("lanch")).map(dish => (
-                            <DishItemSmall key={dish._id} dish={dish} />)) : (
-                            dish.dishes.filter(dish => dish.restaurant === id && dish.type.includes("dinner")).map(dish => (
+                        <div className='display-dishes'>
+                            {params.breakfast === true ? dish.dishes.filter(dish => dish.restaurant === id && dish.type.includes("breakfast")).map(dish => (
                                 <DishItemSmall key={dish._id} dish={dish} />
-                            )))}
+                                // console.log(dish)
+                            )) : params.lanch === true ? dish.dishes.filter(dish => dish.restaurant === id && dish.type.includes("lanch")).map(dish => (
+                                <DishItemSmall key={dish._id} dish={dish} />)) : (
+                                dish.dishes.filter(dish => dish.restaurant === id && dish.type.includes("dinner")).map(dish => (
+                                    <DishItemSmall key={dish._id} dish={dish} />
+                                )))}
+                        </div>
                     </div>
-                </div>
+                </React.Fragment>
             )}
 
         </React.Fragment>

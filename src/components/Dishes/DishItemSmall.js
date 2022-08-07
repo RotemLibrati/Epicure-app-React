@@ -1,8 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './DishItemSmall.css';
-const DishItemSmall = ({ dish: { name, image, description, price } }) => {
+
+//Context
+import { SetOrder } from '../../context/SetToggleCart';
+
+//Redux
+import { connect } from 'react-redux';
+import { getDishById } from '../../actions/dish';
+
+const DishItemSmall = ({ dish: { _id, name, image, description, price }, getDishById }) => {
+    const { createOrder, changeCreateOrder } = useContext(SetOrder);
+    const clickOnItem = () => {
+        changeCreateOrder(!createOrder);
+        console.log(createOrder);
+        getDishById(_id);
+    };
     return (
-        <div className='dish-card-small'>
+        <div className='dish-card-small' onClick={clickOnItem}>
             <img className='dish-small-img' src={image} alt={image} />
             <div className='dish-card-small-info'>
                 <div className='dish-small-name'>{name}</div>
@@ -19,4 +33,4 @@ const DishItemSmall = ({ dish: { name, image, description, price } }) => {
     )
 };
 
-export default DishItemSmall;
+export default connect(null, { getDishById })(DishItemSmall);

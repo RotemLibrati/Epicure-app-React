@@ -8,6 +8,7 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+    
 }
 .dish-info-card {
     display: flex;
@@ -167,6 +168,8 @@
     margin-top: 30px;
     width: 380px;
     height: 654px;
+    text-decoration: none;
+    color: black;
     
     
     /* Inside auto layout */
