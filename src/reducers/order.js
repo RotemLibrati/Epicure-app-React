@@ -1,14 +1,19 @@
-import { SET_NEW_ORDER, ORDER_ERROR } from "../actions/types"
+import { SET_NEW_ORDER, ORDER_ERROR, GET_NO_PAYMENT_ORDERS } from "../actions/types"
 const initialState = {
     orders: [],
-    loading_o : true,
-    errors : {}
+    loading_o: true,
+    errors: {}
 };
 
-export default function(state=initialState, action) {
+export default function (state = initialState, action) {
     const { type, payload } = action;
-    switch(type){
+    switch (type) {
         case SET_NEW_ORDER:
+            return {
+                ...state,
+                loading_o: false
+            }
+        case GET_NO_PAYMENT_ORDERS:
             return {
                 ...state,
                 orders: payload,

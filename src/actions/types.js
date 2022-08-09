@@ -12,4 +12,5 @@ export const GET_DISH_BY_ID = 'GET_DISH_BY_ID';
 export const DELETE_DISH_BY_ID = 'DELETE_DISH_BY_ID';
 export const SET_NEW_ORDER = 'SET_NEW_ORDER';
 export const ORDER_ERROR = 'ORDER_ERROR';
+export const GET_NO_PAYMENT_ORDERS = 'GET_NO_PAYMENT_ORDERS';
 
