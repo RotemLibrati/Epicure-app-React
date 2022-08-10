@@ -1,0 +1,30 @@
+.order-history-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.order-history-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+.order-history-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 605px;
+    width: 859px;
+    overflow-y: scroll;
+    margin: auto;
+    
+
+}
