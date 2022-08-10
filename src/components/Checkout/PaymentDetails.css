@@ -1,0 +1,29 @@
+.payment-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.payment-details-title {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 2.67px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.payment-details-input {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+.input-payment {
+    width: 360px;
+    height: 45px;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid;
+    margin-bottom: 20px;
+}
