@@ -1,0 +1,102 @@
+.order-payment-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
+.order-payment-details {
+    display: flex;
+    flex-direction: column;
+}
+.order-payment-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.order-payment-rest {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 1.97px;
+    color: #000000;
+    padding: 15px;
+}
+.order-payment-dishes {
+    width: 385px;
+    height: 262px;
+    padding: 15px;
+    overflow-y: scroll;
+}
+.divider {
+    border: 0.5px solid #979797;
+    border-radius: 2px;
+    width: 136px;
+    height: 0px;
+    margin-top: 25px;
+}
+.order-payment-comment {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+}
+.comment-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1.97px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.payment-comment-input {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1.29px;
+    box-sizing: border-box;
+    height: 122px;
+    width: 358px;
+    border: 0.6px solid #979797;
+    border-radius: 3.42857px;
+    opacity: 0.5;
+}
+.order-payment-btn-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #000000;
+}
+.order-payment-btn {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 48px;
+    width: 206px;
+    background: #000000;
+    border: 1px solid #000000;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.order-payment-btn-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 2.67px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}

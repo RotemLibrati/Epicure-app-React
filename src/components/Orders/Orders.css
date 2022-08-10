@@ -10,6 +10,18 @@
     margin-left: 1050px;
     top: 64px;
 }
+.order-cart-dishes {
+    position: absolute;
+    z-index: 9999;
+    display: block;
+    visibility: visible;
+    width: 497px;
+    height: 779px;
+    background: #FFFFFF;
+    box-shadow: 2px 4px 10px rgba(175, 175, 175, 0.25);
+    margin-left: 1050px;
+    top: 64px;
+}
 .order-content{
     display: flex;
     flex-direction: column;
@@ -65,4 +77,136 @@
     letter-spacing: 2.67px;
     text-transform: uppercase;
     color: #000000;
+}
+.order-content-dishes{
+    display: flex;
+    justify-content: center;
+    height: 354px;
+}
+.group-161 {
+    height: 62px;
+}
+.group-161-title{
+    margin-top: 20px;
+    font-style: normal;
+    text-align: center;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.group-161-restaurant-name {
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 1.97px;
+    color: #000000;
+}
+.group-161-dishes {
+    margin-top: 20px;
+    width: 385px;
+    height: 262px;
+    overflow-y: scroll;
+}
+.total-price-frame {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+.total-price {  
+    height: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 1.03px;
+    color: #000000;
+}
+.total-price-line {
+    display: flex;
+    border: 0.5px solid #979797;
+    width: 76px;
+    height: 0px;
+}
+.group-162 {
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+}
+.comment {
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1.97px;
+    color: #000000;
+}
+.comment-input {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1.29px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    height: 122px;
+    border: 0.6px solid #979797;
+    border-radius: 3.42857px;
+    opacity: 0.5;
+}
+.buttons-frame{
+    display: flex;
+    flex-direction: column;
+    height: 48px;
+}
+.button-checkout {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 206px;
+    background: #000000;
+    border: 1px solid #000000;
+    margin-top: 15px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: black;
+}
+.button-checkout-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 2.67px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.order-btn-history2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 206px;
+    cursor: pointer;
+    border: 1px solid #000000;
+    margin: auto;
+    text-decoration: none;
+    color: black;
 }
