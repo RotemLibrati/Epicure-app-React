@@ -11,6 +11,7 @@ import OrderItemHistory from '../../components/Order/OrderItemHistory';
 import Spinner from '../../components/layout/Spinner';
 
 const OrderHistoryPage = ({ orders, loading, getOrdersHistory }) => {
+  console.log("orders",orders);
   useEffect(() => {
     getOrdersHistory();
   }, [getOrdersHistory]);
@@ -24,7 +25,8 @@ const OrderHistoryPage = ({ orders, loading, getOrdersHistory }) => {
           </div>
         ) : (
           orders.map(order => (
-            <OrderItemHistory key={order._id} order={order}/>
+            <OrderItemHistory key={order._id} order={order}
+            />
           )))}
       </div>
     </div>
@@ -33,7 +35,7 @@ const OrderHistoryPage = ({ orders, loading, getOrdersHistory }) => {
 
 OrderHistoryPage.propTypes = {
   getOrdersHistory: PropTypes.func.isRequired,
-  orders: PropTypes.object.isRequired,
+  orders: PropTypes.array.isRequired,
   loading: PropTypes.bool.isRequired
 }
 
