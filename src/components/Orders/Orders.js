@@ -16,7 +16,6 @@ const Orders = ({ order: { orders, loading_o }, getOrdersForPayment }) => {
     useEffect(() => {
         getOrdersForPayment();
     }, [getOrdersForPayment]);
-    console.log(orders);
     return (
         !orders || orders.length === 0 ? (
             <div className='order-cart'>
@@ -26,9 +25,9 @@ const Orders = ({ order: { orders, loading_o }, getOrdersForPayment }) => {
                     </div>
                     <div className='order-empty-cart'>Your bag is empty</div>
                 </div>
-                <button className='order-btn-history'>
+                <Link className='order-btn-history' to="/orders/history">
                     <div className='order-btn-text'>Order History</div>
-                </button>
+                </Link>
             </div>
         ) : (
             <div className='order-cart-dishes'>
@@ -55,9 +54,9 @@ const Orders = ({ order: { orders, loading_o }, getOrdersForPayment }) => {
                         <Link className='button-checkout' to="/checkout">
                             <div className='button-checkout-text'>Checkout</div>
                         </Link>
-                            <Link className='order-btn-history2' to="/orders/history">
-                                <div className='order-btn-text'>Order History</div>
-                            </Link>
+                        <Link className='order-btn-history2' to="/orders/history">
+                            <div className='order-btn-text'>Order History</div>
+                        </Link>
                     </div>
                 </div>
             </div>

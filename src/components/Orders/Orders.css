@@ -66,6 +66,8 @@
     left: 146px;
     top: 494px;
     border: 1px solid #000000;
+    text-decoration: none;
+    color: black;
 }
 .order-btn-text {
     height: 20px;
