@@ -1,0 +1,82 @@
+.order-summary-container {
+    display: flex;
+    flex-direction: column;
+    width: 497px;
+}
+.order-summary-title {
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    color: #000000;
+    padding-top: 27px;
+}
+.order-summary-rest {
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 1.97px;
+    color: #000000;
+    padding-top: 8px;
+    padding-bottom: 15px;
+}
+.order-summary-dishes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: scroll;
+    width: 400px;
+    height: 312px;
+    padding-left: 50px;
+}
+.order-summary-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+    margin: auto;
+}
+.order-summary-line {
+    width: 76px;
+    height: 0px;
+    border: 0.5px solid #979797;
+}
+.order-summary-price-text {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 1.03px;
+    color: #000000;
+}
+.order-summary-comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    /* float: right; */
+}
+.summary-comment-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1.97px;
+    color: #000000;
+    margin-bottom: 20px;
+}
