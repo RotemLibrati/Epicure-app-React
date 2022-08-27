@@ -3,34 +3,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 36px 126px;
-    gap: 18px;
     position: absolute;
+    margin-top: 250px;
     width: 776px;
     height: 221px;
-    left: 332px;
-    top: 300px;
     background-color: rgba(255, 255, 255, 0.88);
 }
 .hero {
     width: 420px;
     height: 80px;
-
     font-family: 'Helvetica Neue';
     font-style: normal;
     font-weight: 200;
     font-size: 32px;
     line-height: 40px;
-    /* or 125% */
-
     letter-spacing: 1.97px;
-
     color: #000000;
-
-
-/* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }

@@ -23,7 +23,7 @@ import Orders from '../../components/Orders/Orders';
 
 const HomePage = ({ getTopRestaurants, getTopDishes, getAllRestaurants,
   getAllChefs, restaurant: { restaurants, top_restaurants, loading_r }, dish: { top_dishes, loading_d }, chef: { chefs, loading_c } }) => {
-    const { toggleOrder } = useContext(SetOrder);
+  const { toggleOrder } = useContext(SetOrder);
   useEffect(() => {
     getTopRestaurants();
     getTopDishes();
@@ -34,7 +34,9 @@ const HomePage = ({ getTopRestaurants, getTopDishes, getAllRestaurants,
     <div>
       {toggleOrder && <Orders />}
       <img className='hero-picture' src={require('../../assert/images/hero-picture 1.png')} alt='logo-search' />
-      <Box />
+      <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center' }} >
+        <Box />
+      </div>
       <div className='frame-146'>
         <div className='popular-rest'>
           <div className='title-pop-rest'>Popular restaurant in epicure:</div>
@@ -66,7 +68,7 @@ const HomePage = ({ getTopRestaurants, getTopDishes, getAllRestaurants,
             </div>
             ) : (
               top_dishes.map(dish => (
-                  <DishItem key={dish._id} dish={dish} />
+                <DishItem key={dish._id} dish={dish} />
               ))
             )}
           </div>
