@@ -36,7 +36,7 @@ export const getOrdersForPayment = () => async dispatch => {
 
 export const getOrdersHistory = () => async dispatch => {
     try {
-        const res = await axios.get('/api/orders');
+        const res = await axios.get('/api/orders-history');
         dispatch({
             type: GET_ORDER_HISTORY,
             payload: res.data
@@ -50,8 +50,10 @@ export const getOrdersHistory = () => async dispatch => {
 };
 
 export const setOrderHistory = (orders, price) => async dispatch => {
+    const oredersId = [];
+    orders.map(order => oredersId.push({"order": order._id}));
     const formData = {
-        "orders": orders,
+        "orders": oredersId,
         "price": price,
         "restaurant": orders[0].dish.restaurant._id
     };

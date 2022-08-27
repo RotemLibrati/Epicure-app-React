@@ -29,7 +29,6 @@ export default function (state = initialState, action) {
         case SET_ORDER_HISTORY:
             return {
                 ...state,
-                orders_history: payload,
                 loading_o: false
             }
         case PUT_PAYMENT_TRUE:
