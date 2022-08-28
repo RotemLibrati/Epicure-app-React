@@ -34,7 +34,6 @@ export default function (state = initialState, action) {
         case PUT_PAYMENT_TRUE:
             return {
                 ...state,
-                orders: [],
                 loading_o: false
             }
         case ORDER_ERROR:
