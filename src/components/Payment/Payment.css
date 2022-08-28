@@ -1,0 +1,143 @@
+.payment-container {
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.two-items {
+    padding: 85px;
+}
+.x-icon {
+    cursor: pointer;
+}
+.payment-box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 379px;
+    height: 544px;
+    background: white;
+}
+.order-recived {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 76px;
+    padding: 30px;
+}
+.payment-title{
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 2.67px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.payment-subtitle{
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1.97px;
+    color: #000000;
+}
+.payment-time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 269px;
+}
+.first{
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1.97px;
+    color: #000000;
+}
+.second{
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 1.97px;
+    color: #000000;
+}
+.third{
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1.97px;
+    color: #000000;
+}
+.dish-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 267px;
+    height: 68px;
+}
+.dish-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 26px;
+    width: 267px;
+    padding-top: 10px;
+}
+.dish-name-payment{
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 2.67px;
+    color: #000000;
+}
+.dish-price-payment{
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: 1.97px;
+    color: #000000;
+}
+.payment-total-price {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 35px;
+    letter-spacing: 2.67px;
+    text-transform: uppercase;
+    color: #000000;
+}
