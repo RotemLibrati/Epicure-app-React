@@ -13,12 +13,13 @@ import OrderItem from '../../components/Orders/OrderItem';
 import { SetOrder } from '../../context/SetToggleCart';
 
 const OrderInfoPayment = ({ orders, price = 0, setOrderHistory, putPaymentTrue }) => {
-    const { toggleOrder, changeToggleOrder } = useContext(SetOrder);
+    const { toggleOrder, changeToggleOrder, confirmPayamnt, changeConfirmPayment } = useContext(SetOrder);
     const history = useNavigate();
     const paymentOrder = async () => {
         changeToggleOrder(!toggleOrder);
         await setOrderHistory(orders, price);
         await putPaymentTrue();
+        changeConfirmPayment(!confirmPayamnt);
         history('/');
     }
     return (

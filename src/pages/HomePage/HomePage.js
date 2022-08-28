@@ -19,11 +19,12 @@ import Spinner from '../../components/layout/Spinner';
 import Icons from '../../components/Icons/Icons';
 import ChefOfTheWeek from '../../components/ChefOfTheWeek/ChefOfTheWeek';
 import Orders from '../../components/Orders/Orders';
+import Payment from '../../components/Payment/Payment';
 
 
 const HomePage = ({ getTopRestaurants, getTopDishes, getAllRestaurants,
   getAllChefs, restaurant: { restaurants, top_restaurants, loading_r }, dish: { top_dishes, loading_d }, chef: { chefs, loading_c } }) => {
-  const { toggleOrder } = useContext(SetOrder);
+  const { toggleOrder, confirmPayamnt } = useContext(SetOrder);
   useEffect(() => {
     getTopRestaurants();
     getTopDishes();
@@ -32,6 +33,7 @@ const HomePage = ({ getTopRestaurants, getTopDishes, getAllRestaurants,
   }, [getTopRestaurants, getTopDishes, getAllChefs, getAllRestaurants]);
   return (
     <div>
+      {confirmPayamnt && <Payment />}
       {toggleOrder && <Orders />}
       <img className='hero-picture' src={require('../../assert/images/hero-picture 1.png')} alt='logo-search' />
       <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center' }} >
